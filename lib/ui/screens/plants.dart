@@ -68,7 +68,7 @@ class _PlantsPageState extends State<PlantsPage> {
                 children: [
                   Container(
                     padding: const EdgeInsets.symmetric(
-                      horizontal: 16.0,
+                      horizontal: 22.0,
                     ),
                     width: size.width * .9,
                     decoration: BoxDecoration(
@@ -99,10 +99,10 @@ class _PlantsPageState extends State<PlantsPage> {
               ),
             ),
             Container(
-              padding: const EdgeInsets.only(left: 16, bottom: 15, top: 15),
+              padding: const EdgeInsets.only(bottom: 10, top: 10),
             ),
             Container(
-              padding: const EdgeInsets.symmetric(horizontal: 12),
+              padding: const EdgeInsets.symmetric(horizontal: 22),
               height: size.height * .7,
               child: ListView.builder(
                   itemCount: buckets.length,
@@ -126,8 +126,8 @@ class _PlantsPageState extends State<PlantsPage> {
                             clipBehavior: Clip.none,
                             children: [
                               Container(
-                                width: 60.0,
-                                height: 60.0,
+                                width: 55.0,
+                                height: 55.0,
                                 decoration: BoxDecoration(
                                   color: Constants.primaryColor.withOpacity(.1),
                                   borderRadius: BorderRadius.circular(10),

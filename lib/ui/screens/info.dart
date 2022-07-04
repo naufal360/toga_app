@@ -22,7 +22,10 @@ class _infoPageState extends State<infoPage> {
               padding: EdgeInsets.all(10.0),
               child: Text(
                 'Toga App',
-                style: TextStyle(fontSize: 20, color: Colors.black54),
+                style: TextStyle(
+                    fontSize: 20,
+                    color: Colors.black54,
+                    fontWeight: FontWeight.bold),
               ),
             ),
             const Padding(
@@ -33,7 +36,7 @@ class _infoPageState extends State<infoPage> {
               ),
             ),
             const Padding(
-              padding: const EdgeInsets.all(30.0),
+              padding: EdgeInsets.all(30.0),
               child: Align(
                   alignment: Alignment.bottomRight,
                   child: Text(
@@ -48,7 +51,7 @@ class _infoPageState extends State<infoPage> {
                 onPressed: () {
                   Navigator.of(context).pop();
                 },
-                child: Text('Kembali ke Home'),
+                child: Text('Kembali'),
                 style:
                     ElevatedButton.styleFrom(primary: Constants.primaryColor),
               ),

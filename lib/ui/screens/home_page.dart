@@ -160,9 +160,9 @@ class _HomePageState extends State<HomePage> {
                   ),
                 )),
             Container(
-              padding: const EdgeInsets.only(left: 16, bottom: 20, top: 20),
+              padding: const EdgeInsets.only(left: 22, bottom: 20, top: 20),
               child: const Text(
-                'Jenis jenis Toga',
+                'Jenis Jenis Toga',
                 style: TextStyle(
                   fontWeight: FontWeight.bold,
                   fontSize: 18.0,
@@ -265,7 +265,7 @@ class _HomePageState extends State<HomePage> {
                   }),
             ),
             Container(
-              padding: const EdgeInsets.only(left: 16, bottom: 20, top: 25),
+              padding: const EdgeInsets.only(left: 22, bottom: 20, top: 25),
               child: const Text(
                 'Pengobatan',
                 style: TextStyle(
@@ -276,7 +276,7 @@ class _HomePageState extends State<HomePage> {
               ),
             ),
             Container(
-              padding: const EdgeInsets.symmetric(horizontal: 12),
+              padding: const EdgeInsets.symmetric(horizontal: 22),
               height: size.height * .5,
               child: ListView.builder(
                   itemCount: medikasi?.length ?? 0,
@@ -303,7 +303,6 @@ class _HomePageState extends State<HomePage> {
                                 width: 50.0,
                                 height: 50.0,
                                 decoration: BoxDecoration(
-                                  color: Constants.primaryColor.withOpacity(.1),
                                   borderRadius: BorderRadius.circular(10),
                                 ),
                                 child: SizedBox(
@@ -312,7 +311,7 @@ class _HomePageState extends State<HomePage> {
                                       borderRadius: BorderRadius.circular(10),
                                       child: const Image(
                                         image: AssetImage(
-                                            'assets/images/medic.png'),
+                                            'assets/images/bandage.png'),
                                         fit: BoxFit.fill,
                                       )),
                                 ),

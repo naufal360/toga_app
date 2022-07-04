@@ -29,7 +29,8 @@ class _HomePageState extends State<HomeDetail> {
                 ),
                 SafeArea(
                   child: Padding(
-                    padding: const EdgeInsets.all(10.0),
+                    padding: const EdgeInsets.only(
+                        top: 22, left: 22, right: 22, bottom: 22),
                     child: Row(
                       mainAxisAlignment: MainAxisAlignment.spaceBetween,
                       children: [
@@ -51,7 +52,7 @@ class _HomePageState extends State<HomeDetail> {
                 ),
                 Container(
                     margin:
-                        const EdgeInsets.only(top: 410, left: 15, right: 15),
+                        const EdgeInsets.only(top: 410, left: 22, right: 22),
                     child: Column(
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: <Widget>[

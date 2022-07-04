@@ -68,7 +68,7 @@ class _MedicalPageState extends State<MedicalPage> {
                 children: [
                   Container(
                     padding: const EdgeInsets.symmetric(
-                      horizontal: 16.0,
+                      horizontal: 22.0,
                     ),
                     width: size.width * .9,
                     decoration: BoxDecoration(
@@ -99,10 +99,10 @@ class _MedicalPageState extends State<MedicalPage> {
               ),
             ),
             Container(
-              padding: const EdgeInsets.only(left: 16, bottom: 15, top: 15),
+              padding: const EdgeInsets.only(bottom: 10, top: 10),
             ),
             Container(
-              padding: const EdgeInsets.symmetric(horizontal: 12),
+              padding: const EdgeInsets.symmetric(horizontal: 22),
               height: size.height * .7,
               child: ListView.builder(
                   itemCount: buckets.length,
@@ -129,16 +129,15 @@ class _MedicalPageState extends State<MedicalPage> {
                                 width: 50.0,
                                 height: 50.0,
                                 decoration: BoxDecoration(
-                                  color: Constants.primaryColor.withOpacity(.1),
                                   borderRadius: BorderRadius.circular(10),
                                 ),
                                 child: SizedBox(
-                                  height: 50.0,
+                                  height: 80.0,
                                   child: ClipRRect(
                                       borderRadius: BorderRadius.circular(10),
                                       child: Image(
                                         image: const AssetImage(
-                                            'assets/images/medic.png'),
+                                            'assets/images/bandage.png'),
                                         fit: BoxFit.fill,
                                       )),
                                 ),

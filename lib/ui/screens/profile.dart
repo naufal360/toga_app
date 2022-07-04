@@ -68,7 +68,7 @@ class _ProfilePageState extends State<ProfilePage> {
                           borderRadius: BorderRadius.circular(20),
                         ),
                         margin: EdgeInsets.symmetric(
-                            horizontal: 20.0, vertical: 5.0),
+                            horizontal: 22.0, vertical: 5.0),
                         clipBehavior: Clip.antiAlias,
                         color: Colors.white,
                         elevation: 5.0,
@@ -100,7 +100,7 @@ class _ProfilePageState extends State<ProfilePage> {
           Container(
             child: Padding(
               padding:
-                  const EdgeInsets.symmetric(vertical: 30.0, horizontal: 16.0),
+                  const EdgeInsets.symmetric(vertical: 30.0, horizontal: 22.0),
               child: Column(
                 mainAxisAlignment: MainAxisAlignment.center,
                 crossAxisAlignment: CrossAxisAlignment.start,
@@ -110,7 +110,7 @@ class _ProfilePageState extends State<ProfilePage> {
                     style: TextStyle(
                         color: Constants.primaryColor,
                         fontStyle: FontStyle.normal,
-                        fontSize: 28.0),
+                        fontSize: 24.0),
                   ),
                   SizedBox(
                     height: 10.0,
@@ -118,7 +118,7 @@ class _ProfilePageState extends State<ProfilePage> {
                   Text(
                     'Ahmad Naufal Fadhil adalah seorang mahasiswa universitas gunadarma yang merancang aplikasi Toga app.',
                     style: TextStyle(
-                      fontSize: 20.0,
+                      fontSize: 18.0,
                       fontWeight: FontWeight.w300,
                       color: Colors.black,
                     ),

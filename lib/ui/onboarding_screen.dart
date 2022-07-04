@@ -114,7 +114,7 @@ class _OnboardingScreenState extends State<OnboardingScreen> {
     );
   }
 
-  //Create the indicator decorations widget
+  //Indicator decorations widget
   Widget _indicator(bool isActive) {
     return AnimatedContainer(
       duration: const Duration(milliseconds: 300),
@@ -128,7 +128,7 @@ class _OnboardingScreenState extends State<OnboardingScreen> {
     );
   }
 
-//Create the indicator list
+//Indicator list
   List<Widget> _buildIndicator() {
     List<Widget> indicators = [];
 

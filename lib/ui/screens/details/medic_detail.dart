@@ -38,7 +38,8 @@ class _MedicPageState extends State<MedicDetail> {
               children: <Widget>[
                 SafeArea(
                   child: Padding(
-                    padding: const EdgeInsets.all(10.0),
+                    padding: const EdgeInsets.only(
+                        top: 52, left: 22, right: 22, bottom: 22),
                     child: Row(
                       mainAxisAlignment: MainAxisAlignment.spaceBetween,
                       children: [
@@ -60,7 +61,7 @@ class _MedicPageState extends State<MedicDetail> {
                 ),
                 Container(
                     margin:
-                        const EdgeInsets.only(top: 125, left: 15, right: 15),
+                        const EdgeInsets.only(top: 190, left: 22, right: 22),
                     child: Column(
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: <Widget>[
@@ -76,7 +77,6 @@ class _MedicPageState extends State<MedicDetail> {
                           ],
                         ),
                         const SizedBox(height: 50),
-                        //data const
                         const Text('Deskripsi',
                             style: TextStyle(
                                 fontWeight: FontWeight.bold, fontSize: 20)),
@@ -96,7 +96,7 @@ class _MedicPageState extends State<MedicDetail> {
                           child: Column(
                             children: [
                               ListView.builder(
-                                  scrollDirection: Axis.vertical,
+                                  physics: const NeverScrollableScrollPhysics(),
                                   shrinkWrap: true,
                                   itemCount: widget.material.length,
                                   itemBuilder: (context, index) {
@@ -125,8 +125,10 @@ class _MedicPageState extends State<MedicDetail> {
                                                   )),
                                             ),
                                           ),
-                                          const SizedBox(height: 10),
-                                          SizedBox(width: 16),
+                                          const SizedBox(
+                                            height: 10,
+                                            width: 16,
+                                          ),
                                           Expanded(
                                             child: Column(
                                               crossAxisAlignment:
