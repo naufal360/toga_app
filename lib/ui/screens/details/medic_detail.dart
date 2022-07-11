@@ -1,5 +1,4 @@
-// import 'package:submission/model/c_text.dart';
-// import 'package:submission/model/plant.dart';
+// ignore_for_file: deprecated_member_use
 
 import 'package:flutter/material.dart';
 import 'package:toga_app/constant.dart';
