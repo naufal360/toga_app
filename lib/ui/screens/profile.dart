@@ -33,9 +33,9 @@ class _ProfilePageState extends State<ProfilePage> {
                     crossAxisAlignment: CrossAxisAlignment.center,
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: [
-                      const CircleAvatar(
+                      CircleAvatar(
                         backgroundImage: NetworkImage(
-                          "https://storage.googleapis.com/pi-storage-1/storage1/profile.jpg",
+                          Constants.profilImage,
                         ),
                         radius: 50.0,
                         backgroundColor: Colors.white70,
@@ -87,7 +87,7 @@ class _ProfilePageState extends State<ProfilePage> {
                               horizontal: 8.0, vertical: 22.0),
                           child: Row(
                             children: <Widget>[
-                              Expanded(
+                              const Expanded(
                                 child: Text(
                                   "Kontak :",
                                   style: TextStyle(
@@ -101,13 +101,13 @@ class _ProfilePageState extends State<ProfilePage> {
                                 child: GestureDetector(
                                   onTap: _emailUrl,
                                   child: Column(
-                                    children: <Widget>[
-                                      const IconButton(
+                                    children: const <Widget>[
+                                      IconButton(
                                         icon: FaIcon(FontAwesomeIcons.envelope),
                                         onPressed: null,
                                       ),
-                                      const SizedBox(height: 5.0),
-                                      const Text(
+                                      SizedBox(height: 5.0),
+                                      Text(
                                         "Email",
                                         style: TextStyle(
                                           fontSize: 14.0,
@@ -123,13 +123,13 @@ class _ProfilePageState extends State<ProfilePage> {
                                 child: GestureDetector(
                                   onTap: _linkedinUrl,
                                   child: Column(
-                                    children: <Widget>[
-                                      const IconButton(
+                                    children: const <Widget>[
+                                      IconButton(
                                         icon: FaIcon(FontAwesomeIcons.linkedin),
                                         onPressed: null,
                                       ),
-                                      const SizedBox(height: 5.0),
-                                      const Text(
+                                      SizedBox(height: 5.0),
+                                      Text(
                                         "Linkedin",
                                         style: TextStyle(
                                           fontSize: 14.0,
@@ -141,12 +141,6 @@ class _ProfilePageState extends State<ProfilePage> {
                                   ),
                                 ),
                               ),
-                              // Expanded(
-                              //   child: IconButton(
-                              //     icon: const FaIcon(FontAwesomeIcons.envelope),
-                              //     onPressed: _githubUrl,
-                              //   ),
-                              // ),
                             ],
                           ),
                         ),
@@ -164,7 +158,7 @@ class _ProfilePageState extends State<ProfilePage> {
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
                   Text(
-                    "Developer background:",
+                    "Creator background:",
                     style: TextStyle(
                         color: Constants.primaryColor,
                         fontStyle: FontStyle.normal,
@@ -173,9 +167,9 @@ class _ProfilePageState extends State<ProfilePage> {
                   const SizedBox(
                     height: 10.0,
                   ),
-                  const Text(
-                    'Ahmad Naufal Fadhil adalah seorang mahasiswa universitas gunadarma yang merancang aplikasi Toga app.',
-                    style: TextStyle(
+                  Text(
+                    Constants.devBackground,
+                    style: const TextStyle(
                       fontSize: 18.0,
                       fontWeight: FontWeight.w300,
                       color: Colors.black,

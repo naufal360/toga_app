@@ -4,7 +4,7 @@ import 'package:http/http.dart' as http;
 import 'package:toga_app/models/medikasi.dart';
 import 'package:toga_app/models/tanaman.dart';
 
-class RemoteController {
+class HomeController {
   var baseUrl = 'https://pi-toga.herokuapp.com/api';
   var client = http.Client();
 
@@ -14,7 +14,6 @@ class RemoteController {
       var response = await client.get(uri);
       if (response.statusCode == 200) {
         var json = response.body;
-        print(tanamanFromJson(json));
         return tanamanFromJson(json);
       }
     } catch (e) {

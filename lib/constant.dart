@@ -5,6 +5,17 @@ class Constants {
   static var primaryColor = const Color(0xff729C5E);
   static var blackColor = Colors.black54;
 
+  //Static Images
+  static var profilImage =
+      "https://storage.googleapis.com/pi-storage-1/storage1/profile.jpg";
+  static var homeImage = "assets/images/intro.jpg";
+  static var medicImage = "assets/images/bandage.png";
+  static var detailPlantImage = "assets/images/mortar1.png";
+  static var detailMedicImage = "assets/images/mortar2.png";
+  static var onboardImageOne = "assets/images/plant_1.png";
+  static var onboardImageTwo = "assets/images/plant_2.png";
+  static var onboardImageThree = "assets/images/plant_3.png";
+
   //Onboarding texts
   static var titleOne = "Selamat datang di Toga app!";
   static var descriptionOne = "Tahukah anda apakah itu Toga?";
@@ -14,7 +25,18 @@ class Constants {
   static var titleThree = "Mengapa menanam Toga?";
   static var descriptionThree =
       "Untuk memenuhi keperluan alam bagi kehidupan serta mengatasi masalah kesehatan secara tradisional.";
-  //Detail texts
+
+  //Info texts
+  static var titleApp = "Toga App";
+  static var version = "v.1.0.0";
+  static var tujuanApp =
+      "Aplikasi ini bertujuan sebagai sarana edukasi dan sebagai objek penelitian ilmiah.";
+
+  //Profil texts
+  static var devBackground =
+      "Ahmad Naufal Fadhil adalah seorang mahasiswa universitas gunadarma yang merancang aplikasi Toga app.";
+
+  //Home_Detail texts
   static var homedetailTitle = "Toga";
   static var homedetailSubTitle = "Apa itu Toga?";
   static var homedetailParagraphOne =

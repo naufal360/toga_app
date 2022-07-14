@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:toga_app/constant.dart';
-import 'package:toga_app/services/dio_services.dart';
+import 'package:toga_app/services/search_controller.dart';
 import 'package:toga_app/ui/screens/details/medic_detail.dart';
 
 class MedicalPage extends StatefulWidget {
@@ -82,7 +82,7 @@ class _MedicalPageState extends State<MedicalPage> {
                         Expanded(
                             child: TextField(
                           onChanged: (value) => _runFilter(value),
-                          decoration: InputDecoration(
+                          decoration: const InputDecoration(
                             hintText: 'Cari "Batuk"',
                             border: InputBorder.none,
                             focusedBorder: InputBorder.none,
@@ -136,8 +136,7 @@ class _MedicalPageState extends State<MedicalPage> {
                                   child: ClipRRect(
                                       borderRadius: BorderRadius.circular(10),
                                       child: Image(
-                                        image: const AssetImage(
-                                            'assets/images/bandage.png'),
+                                        image: AssetImage(Constants.medicImage),
                                         fit: BoxFit.fill,
                                       )),
                                 ),

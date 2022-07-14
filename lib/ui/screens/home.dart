@@ -1,13 +1,13 @@
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:toga_app/models/medikasi.dart';
-import 'package:toga_app/ui/screens/details/home_detail.dart';
+import 'package:toga_app/ui/screens/details/definisi_detail.dart';
 import 'package:toga_app/ui/screens/details/medic_detail.dart';
 import 'package:toga_app/ui/screens/details/plant_detail.dart';
 
 import '../../constant.dart';
 import '../../models/tanaman.dart';
-import '../../services/remote_controller.dart';
+import '../../services/home_controller.dart';
 
 class HomePage extends StatefulWidget {
   const HomePage({Key? key}) : super(key: key);
@@ -31,7 +31,7 @@ class _HomePageState extends State<HomePage> {
   }
 
   Future getTanamanData() async {
-    tanamans = await RemoteController().getTanamans();
+    tanamans = await HomeController().getTanamans();
     if (tanamans != null) {
       setState(() {
         isLoaded = true;
@@ -40,7 +40,7 @@ class _HomePageState extends State<HomePage> {
   }
 
   Future getMedikasiData() async {
-    medikasi = await RemoteController().getMedikasis();
+    medikasi = await HomeController().getMedikasis();
     if (medikasi != null) {
       setState(() {
         isLoaded = true;
@@ -108,8 +108,8 @@ class _HomePageState extends State<HomePage> {
                         bottom: 0,
                         child: ClipRRect(
                             borderRadius: BorderRadius.circular(20),
-                            child: const Image(
-                              image: AssetImage('assets/images/intro.jpg'),
+                            child: Image(
+                              image: AssetImage(Constants.homeImage),
                               fit: BoxFit.cover,
                             )),
                       ),
@@ -309,9 +309,8 @@ class _HomePageState extends State<HomePage> {
                                   height: 50.0,
                                   child: ClipRRect(
                                       borderRadius: BorderRadius.circular(10),
-                                      child: const Image(
-                                        image: AssetImage(
-                                            'assets/images/bandage.png'),
+                                      child: Image(
+                                        image: AssetImage(Constants.medicImage),
                                         fit: BoxFit.fill,
                                       )),
                                 ),

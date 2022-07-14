@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:salomon_bottom_bar/salomon_bottom_bar.dart';
-import 'package:toga_app/ui/screens/home_page.dart';
+import 'package:toga_app/ui/screens/home.dart';
 import 'package:toga_app/ui/screens/info.dart';
 import 'package:toga_app/ui/screens/medical.dart';
 import 'package:toga_app/ui/screens/plants.dart';
@@ -63,7 +63,7 @@ class _RootPageState extends State<RootPage> {
               color: Constants.blackColor,
               onPressed: () {
                 Navigator.of(context).push(
-                    MaterialPageRoute(builder: (context) => const infoPage()));
+                    MaterialPageRoute(builder: (context) => const InfoPage()));
               },
             ),
           ],

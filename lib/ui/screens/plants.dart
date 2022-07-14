@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:toga_app/constant.dart';
-import 'package:toga_app/services/dio_services.dart';
+import 'package:toga_app/services/search_controller.dart';
 import 'package:toga_app/ui/screens/details/plant_detail.dart';
 
 class PlantsPage extends StatefulWidget {

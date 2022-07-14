@@ -1,14 +1,14 @@
 import 'package:flutter/material.dart';
 import 'package:toga_app/constant.dart';
 
-class infoPage extends StatefulWidget {
-  const infoPage({Key? key}) : super(key: key);
+class InfoPage extends StatefulWidget {
+  const InfoPage({Key? key}) : super(key: key);
 
   @override
-  State<infoPage> createState() => _infoPageState();
+  State<InfoPage> createState() => _InfoPageState();
 }
 
-class _infoPageState extends State<infoPage> {
+class _InfoPageState extends State<InfoPage> {
   @override
   Widget build(BuildContext context) {
     return SafeArea(
@@ -18,30 +18,30 @@ class _infoPageState extends State<infoPage> {
           mainAxisSize: MainAxisSize.max,
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
-            const Padding(
-              padding: EdgeInsets.all(10.0),
+            Padding(
+              padding: const EdgeInsets.all(10.0),
               child: Text(
-                'Toga App',
-                style: TextStyle(
+                Constants.titleApp,
+                style: const TextStyle(
                     fontSize: 20,
                     color: Colors.black54,
                     fontWeight: FontWeight.bold),
               ),
             ),
-            const Padding(
-              padding: EdgeInsets.all(10.0),
+            Padding(
+              padding: const EdgeInsets.all(10.0),
               child: Text(
-                'v.1.0.0',
-                style: TextStyle(fontSize: 20, color: Colors.black54),
+                Constants.version,
+                style: const TextStyle(fontSize: 20, color: Colors.black54),
               ),
             ),
-            const Padding(
-              padding: EdgeInsets.all(30.0),
+            Padding(
+              padding: const EdgeInsets.all(30.0),
               child: Align(
                   alignment: Alignment.bottomRight,
                   child: Text(
-                    "Aplikasi ini bertujuan sebagai sarana edukasi dan sebagai objek penelitian ilmiah.",
-                    style: TextStyle(fontSize: 18, color: Colors.black54),
+                    Constants.tujuanApp,
+                    style: const TextStyle(fontSize: 18, color: Colors.black54),
                     textAlign: TextAlign.center,
                   )),
             ),
@@ -51,7 +51,7 @@ class _infoPageState extends State<infoPage> {
                 onPressed: () {
                   Navigator.of(context).pop();
                 },
-                child: Text('Kembali'),
+                child: const Text('Kembali'),
                 style:
                     ElevatedButton.styleFrom(primary: Constants.primaryColor),
               ),

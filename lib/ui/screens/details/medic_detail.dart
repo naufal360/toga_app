@@ -67,7 +67,7 @@ class _MedicPageState extends State<MedicDetail> {
                         Row(
                           children: <Widget>[
                             Text(widget.name,
-                                style: TextStyle(
+                                style: const TextStyle(
                                   fontWeight: FontWeight.bold,
                                   fontSize: 32,
                                   color: Colors.black,
@@ -117,9 +117,9 @@ class _MedicPageState extends State<MedicDetail> {
                                               child: ClipRRect(
                                                   borderRadius:
                                                       BorderRadius.circular(10),
-                                                  child: const Image(
-                                                    image: AssetImage(
-                                                        'assets/images/mortar2.png'),
+                                                  child: Image(
+                                                    image: AssetImage(Constants
+                                                        .detailMedicImage),
                                                     fit: BoxFit.fill,
                                                   )),
                                             ),
@@ -139,7 +139,7 @@ class _MedicPageState extends State<MedicDetail> {
                                                   maxLines: 2,
                                                   overflow:
                                                       TextOverflow.ellipsis,
-                                                  style: TextStyle(
+                                                  style: const TextStyle(
                                                       fontSize: 18,
                                                       fontWeight:
                                                           FontWeight.bold),

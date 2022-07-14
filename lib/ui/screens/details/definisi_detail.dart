@@ -21,7 +21,7 @@ class _HomePageState extends State<HomeDetail> {
                 Container(
                   alignment: Alignment.center,
                   child: Image.asset(
-                    'assets/images/intro.jpg',
+                    Constants.homeImage,
                     width: 400,
                     height: 400,
                     fit: BoxFit.fill,
@@ -59,7 +59,7 @@ class _HomePageState extends State<HomeDetail> {
                         Row(
                           children: <Widget>[
                             Text(Constants.homedetailTitle,
-                                style: TextStyle(
+                                style: const TextStyle(
                                   fontWeight: FontWeight.bold,
                                   fontSize: 32,
                                   color: Colors.black,
@@ -69,7 +69,7 @@ class _HomePageState extends State<HomeDetail> {
                         ),
                         const SizedBox(height: 20),
                         Text(Constants.homedetailSubTitle,
-                            style: TextStyle(
+                            style: const TextStyle(
                                 fontWeight: FontWeight.bold, fontSize: 20)),
                         const SizedBox(height: 10),
                         Text(Constants.homedetailParagraphOne,

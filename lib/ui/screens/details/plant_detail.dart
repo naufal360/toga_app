@@ -75,7 +75,7 @@ class _PlantPageState extends State<PlantDetail> {
                         Row(
                           children: <Widget>[
                             Text(widget.name,
-                                style: TextStyle(
+                                style: const TextStyle(
                                   fontWeight: FontWeight.bold,
                                   fontSize: 32,
                                   color: Colors.black,
@@ -167,14 +167,14 @@ class _PlantPageState extends State<PlantDetail> {
                                               child: ClipRRect(
                                                   borderRadius:
                                                       BorderRadius.circular(10),
-                                                  child: const Image(
-                                                    image: AssetImage(
-                                                        'assets/images/mortar1.png'),
+                                                  child: Image(
+                                                    image: AssetImage(Constants
+                                                        .detailPlantImage),
                                                     fit: BoxFit.fill,
                                                   )),
                                             ),
                                           ),
-                                          SizedBox(width: 16),
+                                          const SizedBox(width: 16),
                                           Expanded(
                                             child: Column(
                                               crossAxisAlignment:
@@ -186,7 +186,7 @@ class _PlantPageState extends State<PlantDetail> {
                                                   maxLines: 2,
                                                   overflow:
                                                       TextOverflow.ellipsis,
-                                                  style: TextStyle(
+                                                  style: const TextStyle(
                                                       fontSize: 18,
                                                       fontWeight:
                                                           FontWeight.bold),
