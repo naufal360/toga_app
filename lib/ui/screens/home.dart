@@ -238,21 +238,29 @@ class _HomePageState extends State<HomePage> {
                               ),
                               child: IconButton(
                                   onPressed: () {
-                                    Navigator.of(context).push(
-                                        MaterialPageRoute(
+                                    Navigator.of(context)
+                                        .push(MaterialPageRoute(
                                             builder: (context) => PlantDetail(
-                                                imageUrl:
-                                                    tanamans![index].imageUrl,
-                                                name: tanamans![index].name,
-                                                latinName:
-                                                    tanamans![index].latinName,
-                                                family: tanamans![index].family,
-                                                description: tanamans![index]
-                                                    .description,
-                                                goodPart:
-                                                    tanamans![index].goodPart,
-                                                efficacy: tanamans![index]
-                                                    .efficacy)));
+                                                  imageUrl:
+                                                      tanamans![index].imageUrl,
+                                                  name: tanamans![index].name,
+                                                  latinName: tanamans![index]
+                                                      .latinName,
+                                                  family:
+                                                      tanamans![index].family,
+                                                  description: tanamans![index]
+                                                      .description,
+                                                  goodPart:
+                                                      tanamans![index].goodPart,
+                                                  efficacy:
+                                                      tanamans![index].efficacy,
+                                                  articles:
+                                                      tanamans![index].articles,
+                                                  contained: tanamans![index]
+                                                      .contained,
+                                                  youtube:
+                                                      tanamans![index].youtube,
+                                                )));
                                   },
                                   icon:
                                       const FaIcon(FontAwesomeIcons.arrowRight),

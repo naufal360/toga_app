@@ -17,6 +17,9 @@ class Tanaman {
     required this.goodPart,
     required this.efficacy,
     required this.v,
+    required this.articles,
+    required this.contained,
+    required this.youtube,
   });
 
   int id;
@@ -28,6 +31,9 @@ class Tanaman {
   String goodPart;
   List<String> efficacy;
   int v;
+  String articles;
+  List<String> contained;
+  String youtube;
 
   factory Tanaman.fromJson(Map<String, dynamic> json) => Tanaman(
         id: json["_id"],
@@ -39,6 +45,9 @@ class Tanaman {
         goodPart: json["goodPart"],
         efficacy: List<String>.from(json["efficacy"].map((x) => x)),
         v: json["__v"],
+        articles: json["articles"],
+        contained: List<String>.from(json["contained"].map((x) => x)),
+        youtube: json["youtube"],
       );
 
   Map<String, dynamic> toJson() => {
@@ -51,5 +60,8 @@ class Tanaman {
         "goodPart": goodPart,
         "efficacy": List<dynamic>.from(efficacy.map((x) => x)),
         "__v": v,
+        "articles": articles,
+        "contained": List<dynamic>.from(efficacy.map((x) => x)),
+        "youtube": youtube,
       };
 }

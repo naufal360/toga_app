@@ -11,6 +11,7 @@ class Constants {
   static var homeImage = "assets/images/intro.jpg";
   static var medicImage = "assets/images/bandage.png";
   static var detailPlantImage = "assets/images/mortar1.png";
+  static var detailPlantZat = "assets/images/record.png";
   static var detailMedicImage = "assets/images/mortar2.png";
   static var onboardImageOne = "assets/images/plant_1.png";
   static var onboardImageTwo = "assets/images/plant_2.png";

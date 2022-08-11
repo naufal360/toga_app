@@ -188,6 +188,9 @@ class _PlantsPageState extends State<PlantsPage> {
                                       description: buckets[index].description,
                                       goodPart: buckets[index].goodPart,
                                       efficacy: buckets[index].efficacy,
+                                      articles: buckets[index].articles,
+                                      contained: buckets[index].contained,
+                                      youtube: buckets[index].youtube,
                                     ),
                                   ));
                                 },

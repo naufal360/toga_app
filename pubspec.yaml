@@ -20,6 +20,7 @@ dependencies:
   salomon_bottom_bar: ^3.3.1
   url_launcher: ^6.1.4
   dio: ^4.0.6
+  youtube_player_flutter: ^8.1.0
 
 dev_dependencies:
   flutter_test:

@@ -9,6 +9,9 @@ class TanamanBaru {
   String description;
   String goodPart;
   List<String> efficacy;
+  String articles;
+  List<String> contained;
+  String youtube;
 
   TanamanBaru({
     required this.id,
@@ -19,6 +22,9 @@ class TanamanBaru {
     required this.description,
     required this.goodPart,
     required this.efficacy,
+    required this.articles,
+    required this.contained,
+    required this.youtube,
   });
 }
 
@@ -31,6 +37,9 @@ class TanamanBaruDynamic {
   String description;
   String goodPart;
   List<dynamic> efficacy;
+  String articles;
+  List<dynamic> contained;
+  String youtube;
 
   TanamanBaruDynamic({
     required this.id,
@@ -41,6 +50,9 @@ class TanamanBaruDynamic {
     required this.description,
     required this.goodPart,
     required this.efficacy,
+    required this.articles,
+    required this.contained,
+    required this.youtube,
   });
 }
 
@@ -98,12 +110,19 @@ Future<List<TanamanBaru>> getSearching(String word) async {
         description: data["description"],
         goodPart: data["goodPart"],
         efficacy: data["efficacy"],
+        articles: data["articles"],
+        contained: data["contained"],
+        youtube: data["youtube"],
       );
     }).toList();
     for (var i = 0; i < response.length; i++) {
       List<String> efficacies = [];
       for (var j = 0; j < response[i].efficacy.length; j++) {
         efficacies.add(response[i].efficacy[j].toString());
+      }
+      List<String> contains = [];
+      for (var y = 0; y < response[i].contained.length; y++) {
+        contains.add(response[i].contained[y].toString());
       }
       buckets.add(TanamanBaru(
         id: response[i].id,
@@ -114,6 +133,9 @@ Future<List<TanamanBaru>> getSearching(String word) async {
         description: response[i].description,
         goodPart: response[i].goodPart,
         efficacy: efficacies,
+        articles: response[i].articles,
+        contained: contains,
+        youtube: response[i].youtube,
       ));
     }
     return buckets
@@ -138,12 +160,19 @@ Future<List<TanamanBaru>> getAllData() async {
         description: data["description"],
         goodPart: data["goodPart"],
         efficacy: data["efficacy"],
+        articles: data["articles"],
+        contained: data["contained"],
+        youtube: data["youtube"],
       );
     }).toList();
     for (var i = 0; i < response.length; i++) {
       List<String> efficacies = [];
       for (var j = 0; j < response[i].efficacy.length; j++) {
         efficacies.add(response[i].efficacy[j].toString());
+      }
+      List<String> contains = [];
+      for (var y = 0; y < response[i].contained.length; y++) {
+        contains.add(response[i].contained[y].toString());
       }
       buckets.add(TanamanBaru(
         id: response[i].id,
@@ -154,6 +183,9 @@ Future<List<TanamanBaru>> getAllData() async {
         description: response[i].description,
         goodPart: response[i].goodPart,
         efficacy: efficacies,
+        articles: response[i].articles,
+        contained: contains,
+        youtube: response[i].youtube,
       ));
     }
     return buckets;
